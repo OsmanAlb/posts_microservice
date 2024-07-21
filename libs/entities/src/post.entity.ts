@@ -1,21 +1,21 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Entity, PrimaryColumn, Column } from 'typeorm';
 
 @Entity('posts')
 export class PostEntity {
   @PrimaryColumn('uuid')
   id: string;
 
-  @Column({ name: 'author_id' })
+  @Column()
   title: string;
 
-  @Column({ name: 'author_id' })
+  @Column()
   message: string;
 
   @Column({ name: 'author_id' })
   authorId: string;
 
   @Column({ name: 'is_published' })
-  isPublished: string;
+  isPublished: boolean;
 
   @Column({ name: 'created_at' })
   createdAt: string;
